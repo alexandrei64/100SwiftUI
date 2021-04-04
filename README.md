@@ -2,7 +2,7 @@
 
 <div align ="center">
 <img src="/100SwiftUI_banner.png">
-<div>
+</div>
 
 ## 📌 Description
 
