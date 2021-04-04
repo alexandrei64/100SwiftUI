@@ -1,9 +1,9 @@
 # 100SwiftUI
 
-<img src="/100SwiftUI_banner.png" width=600>
+<div align ="center">
+<img src="/100SwiftUI_banner.png">
+<div>
 
-## Description
+## 📌 Description
 
-This repo hosts all work completed while I learned Swift.
-[https://www.hackingwithswift.com/100/swiftui](https://www.hackingwithswift.com/100/swiftui)
-
+My journey learning Swift and SwiftUI by going through the ["100 Days of Swift UI" by Paul Hudson](https://www.hackingwithswift.com/100/swiftui)
