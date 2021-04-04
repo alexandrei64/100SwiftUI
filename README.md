@@ -1,7 +1,7 @@
 # 100SwiftUI
 
 <div align ="center">
-<img src="/100SwiftUI_banner.png">
+<img src="/Assets/100SwiftUI_Banner.png">
 </div>
 
 ## 📌 Description
