@@ -1,6 +1,6 @@
 # 100SwiftUI
 
-![](/100SwiftUI_banner.png)
+<img src="/100SwiftUI_banner.png" width=600>
 
 ## Description
 
