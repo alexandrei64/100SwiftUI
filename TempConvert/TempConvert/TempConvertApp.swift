@@ -1,14 +1,14 @@
 //
-//  UnitConverterApp.swift
-//  UnitConverter
+//  TempConvertApp.swift
+//  TempConvert
 //
-//  Created by Alex Andrei on 03.04.2021.
+//  Created by Alex Andrei on 04.04.2021.
 //
 
 import SwiftUI
 
 @main
-struct UnitConverterApp: App {
+struct TempConvertApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
