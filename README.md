@@ -1,6 +1,6 @@
 # 100SwiftUI
 
-![](/(100SwiftUI_banner.png)
+![](/100SwiftUI_banner.png)
 
 ## Description
 
