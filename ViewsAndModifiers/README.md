@@ -16,5 +16,5 @@ Related challenge solutions:
 
 ## 📸 Screenshots
 <div align ="center">
-<img src="/Assets/Mockup_ViewsAndModifiers.png">
+<img src="/Assets/Mockup_ViewsAndModifiers.png" width=420>
 </div>
