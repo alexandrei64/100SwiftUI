@@ -11,3 +11,6 @@ Stacks, Image, Alert, LinearGradient
 > * When someone chooses the wrong flag, tell them their mistake in your alert message – something like “Wrong! That’s the flag of France,” for example.
 
 ## 📸 Screenshots
+<div align ="center">
+<img src="/Assets/Mockup_GuessTheFlag.png" width=700>
+</div>
