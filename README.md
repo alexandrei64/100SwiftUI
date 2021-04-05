@@ -14,3 +14,4 @@ My Swift learning journey by following along through [Paul Hudson's "100 Days of
 * [Challenge 1 - TempConvert](https://github.com/alexandrei64/100SwiftUI/blob/master/TempConvert)
 * [Project 2 - GuessTheFlag](https://github.com/alexandrei64/100SwiftUI/blob/master/GuessTheFlag)
 * [Project 3 - ViewsAndModifiers](https://github.com/alexandrei64/100SwiftUI/blob/master/ViewsAndModifiers)
+* [Challenge 2 - RockPaperScissors](https://github.com/alexandrei64/100SwiftUI/blob/master/RockPaperScissors)
