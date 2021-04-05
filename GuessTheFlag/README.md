@@ -1,7 +1,8 @@
 # Project 2 - GuessTheFlag
 
-## 📝 Notes
+## 📝 What I learned
 
+Stacks, Image, Alert, LinearGradient
 
 ## 🏆 Challenges
 

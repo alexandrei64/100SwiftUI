@@ -1,6 +1,6 @@
 # Project 3 - ViewsAndModifiers
 
-## 📝 Notes
+## 📝 What I learned
 
 
 ## 🏆 Challenges
