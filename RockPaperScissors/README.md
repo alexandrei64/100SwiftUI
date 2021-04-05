@@ -10,6 +10,6 @@
 ## 📸 Screenshots
 <!---
 <div align ="center">
-<img src="/Assets/Mockup_RockPaperScissors.png" width=700>
+<img src="/Assets/Mockup_RockPaperScissors.png" width=800>
 </div>
 --->

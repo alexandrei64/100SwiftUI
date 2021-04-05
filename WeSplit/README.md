@@ -12,5 +12,5 @@ Form, Section, NavigationView, @State, TextField, Picker, ForEach
 
 ## 📸 Screenshots
 <div align ="center">
-<img src="/Assets/Mockup_WeSplit.png" width=700>
+<img src="/Assets/Mockup_WeSplit.png" width=800>
 </div>

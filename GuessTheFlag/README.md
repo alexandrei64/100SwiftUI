@@ -12,5 +12,5 @@ Stacks, Image, Alert, LinearGradient
 
 ## 📸 Screenshots
 <div align ="center">
-<img src="/Assets/Mockup_GuessTheFlag.png" width=700>
+<img src="/Assets/Mockup_GuessTheFlag.png" width=800>
 </div>

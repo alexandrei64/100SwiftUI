@@ -11,5 +11,5 @@ Built a temperature conversion app that works around the logic of taking any inp
 
 ## 📸 Screenshots
 <div align ="center">
-<img src="/Assets/Mockup_TempConvert.png" width=700>
+<img src="/Assets/Mockup_TempConvert.png" width=800>
 </div>
