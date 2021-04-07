@@ -2,7 +2,7 @@
 
 ## 📝 Notes
 
-Built a Rock Paper Scissors game that uses a pretty simple UI with text views with some custom font modifiers. I've tried to make use of the emoji support offered by Swift in order to build the buttons with a ForEach loop.
+Built a Rock Paper Scissors game that uses a pretty simple UI with text views and some custom font modifiers. I've tried to make use of the emoji support offered by Swift in order to build the buttons with a ForEach loop.
 
 ## 🏆 Challenges
 

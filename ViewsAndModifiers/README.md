@@ -11,8 +11,8 @@ some View, GridStack, Views, Modifiers
 > * Go back to project 2 and create a FlagImage() view that renders one flag image using the specific set of modifiers we had.
 
 Related challenge solutions:
-* [Project 1 - WeSplit](https://github.com/alexandrei64/100SwiftUI/blob/master/WeSplit)
-* [Project 2 - GuessTheFlag](https://github.com/alexandrei64/100SwiftUI/blob/master/GuessTheFlag)
+* [Project 1 - WeSplit](https://github.com/alexandrei64/100SwiftUI/blob/main/WeSplit)
+* [Project 2 - GuessTheFlag](https://github.com/alexandrei64/100SwiftUI/blob/main/GuessTheFlag)
 
 ## 📸 Screenshots
 <div align ="center">
