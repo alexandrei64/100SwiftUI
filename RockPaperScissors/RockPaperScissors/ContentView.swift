@@ -45,17 +45,13 @@ struct ContentView: View {
                 }
                 Spacer()
                     .frame(height: 33)
-                HStack{
+                HStack (spacing: 38) {
                     ForEach(0 ..< 3) { number in
                         Button(action: {
                             self.buttonTapped(number)
                         }) {
-                            Spacer()
-                                .frame(width:19)
                             Text("\(self.choices[number])")
                                 .font(.system(size: 65))
-                            Spacer()
-                                .frame(width:19)
                         }
                     }
                 }
