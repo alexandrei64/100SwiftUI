@@ -1,4 +1,4 @@
-# Project 1 -  WeSplit
+# Project 1 - WeSplit
 
 ## 📝 What I learned
 

@@ -1,4 +1,4 @@
-# Project 4 -  BetterRest
+# Project 4 - BetterRest
 
 ## 📝 What I learned
 
