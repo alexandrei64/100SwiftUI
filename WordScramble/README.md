@@ -14,5 +14,5 @@ For the first challenge I've chosen an implementation which displays an alert le
 
 ## 📸 Screenshots
 <div align ="center">
-<img src="/Assets/Mockup_WordScramble.png" width=800>
+<img src="/Assets/Mockup_WordScramble.png" width=1100>
 </div>
