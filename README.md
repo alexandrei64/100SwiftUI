@@ -17,3 +17,4 @@ My Swift learning journey by following along through [Paul Hudson's "100 Days of
 * [Challenge 2 - RockPaperScissors](https://github.com/alexandrei64/100SwiftUI/blob/main/RockPaperScissors)
 * [Project 4 - BetterRest](https://github.com/alexandrei64/100SwiftUI/blob/main/BetterRest)
 * [Project 5 - WordScramble](https://github.com/alexandrei64/100SwiftUI/blob/main/WordScramble)
+* [Project 6 - Animations](https://github.com/alexandrei64/100SwiftUI/blob/main/Animations)
