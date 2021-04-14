@@ -9,18 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
-    @State private var correctAnswer = Int.random(in: 0...2)
+    @State private var countries: [String] = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+    @State private var correctAnswer: Int = Int.random(in: 0...2)
     
-    @State private var showingScore = false
-    @State private var scoreTitle = ""
-    @State private var scoreMessage = ""
-    @State private var score = 0
+    @State private var showingScore: Bool = false
+    @State private var scoreTitle: String = ""
+    @State private var scoreMessage: String = ""
+    @State private var score: Int = 0
+    
+    @State private var rotate: [Double] = [0.0, 0.0, 0.0]
+    @State private var opacity: [Double] = [1.0, 1.0, 1.0]
+    @State private var backgroundWrong: Double = 0.0
     
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [Color.blue, Color.black]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                .overlay(
+                    LinearGradient(gradient: Gradient(colors: [Color.red, Color.black]), startPoint: .top, endPoint: .bottom)
+                            .opacity(backgroundWrong)
+                )
+                .edgesIgnoringSafeArea(.all)
+                .animation(.default)
             
             VStack (spacing: 30) {
                 VStack {
@@ -38,9 +47,16 @@ struct ContentView: View {
                         self.flagTapped(number)
                     }) {
                         FlagImage(name: self.countries[number])
-
                     }
+                    .rotation3DEffect(
+                        .degrees(self.rotate[number]),
+                        axis: (x: 0.0, y: 1.0, z: 0.0)
+                        )
+                    .opacity(self.opacity[number])
+                    .animation(.default)
+                    
                 }
+ 
                 Text ("Current score: \(score)")
                     .foregroundColor(.white)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -59,6 +75,10 @@ struct ContentView: View {
             score += 1
             scoreTitle = "Correct"
             scoreMessage = "Your score is \(score)"
+            rotate[number] += 360
+            for wrongFlags in 0 ..< 3 where wrongFlags != correctAnswer {
+                opacity[wrongFlags] = 0.25
+            }
         } else {
             if score <= 0 {
             // Do nothing
@@ -67,6 +87,7 @@ struct ContentView: View {
             }
             scoreTitle = "Wrong"
             scoreMessage = "That's the flag of \(countries[number])"
+            backgroundWrong = 1
         }
         showingScore = true
     }
@@ -74,17 +95,19 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        opacity = [1.0, 1.0, 1.0]
+        backgroundWrong = 0
     }
 }
 
 struct FlagImage: View {
     var name: String
     var body: some View {
-    Image(name)
-        .renderingMode(.original)
-        .clipShape(Capsule())
-        .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-        .shadow(color: .black, radius: 2)
+        Image(name)
+            .renderingMode(.original)
+            .clipShape(Capsule())
+            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
+            .shadow(color: .black, radius: 2)
     }
 }
 
