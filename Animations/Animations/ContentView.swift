@@ -11,8 +11,6 @@ import SwiftUI
 
 struct ContentView: View {
 
-    var animations = ["Implicit animation", "Custom animation", "Binding animation", "Explicit animation", "Controlling animation stack", "Gesture animation", "Show and hide views with transitions", "Custom transition with ViewModifier"]
-    
     var body: some View {
         NavigationView{
             VStack {
