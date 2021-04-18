@@ -18,6 +18,7 @@ These projects helped and guided me through Swift and SwiftUI, but also offered 
 * [Project 4 - BetterRest](https://github.com/alexandrei64/100SwiftUI/blob/main/BetterRest)
 * [Project 5 - WordScramble](https://github.com/alexandrei64/100SwiftUI/blob/main/WordScramble)
 * [Project 6 - Animations](https://github.com/alexandrei64/100SwiftUI/blob/main/Animations)
+* [Project 7 - iExpense](https://github.com/alexandrei64/100SwiftUI/blob/main/iExpense)
 
 ## 🏆 Challenges
 
@@ -25,4 +26,4 @@ Challenges were projects I developed by myself starting from the basic requireme
 
 * [Challenge 1 - TempConvert](https://github.com/alexandrei64/100SwiftUI/blob/main/TempConvert)
 * [Challenge 2 - RockPaperScissors](https://github.com/alexandrei64/100SwiftUI/blob/main/RockPaperScissors)
-* [Challenge 3 - MultiplyBot](https://github.com/alexandrei64/100SwiftUI/blob/main/MultiplyBot)
+* [Challenge 3 - MultiplyBot](https://github.com/alexandrei64/100SwiftUI/blob/main/MultiplyBot) - 🚧 In Progress
