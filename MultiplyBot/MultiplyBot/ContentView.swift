@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  MultiplyBot
 //
-//  Created by Alex Andrei on 14.04.2021.
+//  Created by Alex Andrei on 15.04.2021.
 //
 
 import SwiftUI
@@ -14,6 +14,10 @@ struct ContentView: View {
     }
 }
 
+struct Question {
+    let questions: String
+    let answer: Int
+}
 
 struct SettingScreen: View {
     
@@ -21,7 +25,6 @@ struct SettingScreen: View {
     
     @State private var numberOfTables = 1
     @State private var questionSelection = 1
- //   @ObservedObject private var startGame = ScreenToggle()
     
     var body: some View {
         NavigationView {
@@ -63,7 +66,7 @@ struct SettingScreen: View {
                     Spacer()
                     
                     NavigationLink(
-                        destination: GameScreen(numQ: "1"),
+                        destination: GameScreen(tablesReturned: numberOfTables, questionsReturned: questionSelection),
                         label: {
                             Text("start")
                                 .font(.title)
@@ -82,13 +85,23 @@ struct SettingScreen: View {
     }
 }
 
-
 struct GameScreen: View {
-    var numQ: String
     
-    @State private var character = "platformChar_happy"
+    var tablesReturned: Int
+    var questionsReturned: Int
+    
+    @State private var character = "platformChar_idle"
+    @State private var animateButton: CGFloat = 8
+    @State private var correctResult: Int = 0
+    @State private var typedResult = ""
+    @State private var score: Int = 0
+    @State private var round: Int = 0
+    @State private var currentQuestion: Int = 0
+    
+    @State private var qnaDictionary: [String : Int] = [:]
     
     var body: some View {
+        
         ZStack {
             
             VStack(spacing: 0) {
@@ -109,21 +122,75 @@ struct GameScreen: View {
                 .resizable()
                 .frame(width: 150, height: 150, alignment: .center)
                 .position(x: 90, y: 310)
-                .rotationEffect(.degrees(-2))
             
             VStack {
                 Spacer()
-                    .frame(height: 70)
+                    .frame(height: 30)
                 
-                Text("\(numQ) x 8")
-                    .font(.system(size: 70))
+                Text("what's")
+                    .font(.system(size: 30))
+                
+                Text("yeyt")
+                    .font(.system(size: 50))
                     .fontWeight(.bold)
+                
+                Spacer()
+                    .frame(height: 40)
+                
+                TextField("type result", text: $typedResult)
+                    .keyboardType(.numberPad)
+                    .padding()
+                    .font(.system(size: 20))
+                    .frame(width: 130, height: 70, alignment: .center)
+                    .background(Color.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                
+                Spacer()
+                    .frame(height: 120)
+                
+                Button(action: {
+                    // check result
+                }, label: {
+                    Text("check")
+                        .fontWeight(.bold)
+
+                    
+                })
+                .frame(width: 80, height: 50, alignment: .center)
+                .foregroundColor(.white)
+                .background(Color(red: 242 / 255, green: 103 / 255, blue: 59 / 255))
+                .overlay(Capsule().stroke(Color(red: 98 / 255, green: 98 / 255, blue: 98 / 255), lineWidth: animateButton))
+                .clipShape(Capsule())
+                .position(x: 320, y: 10)
+                .animation(.easeInOut)
                 
                 Spacer()
             }
         }
+        .onAppear(perform: { createQuestions() })
+        .preferredColorScheme(.light)
     }
+
+    func createQuestions() {
+        var generatedQA = [Question]()
+        
+        for multiplier in 1 ... tablesReturned {
+            for multiplicand in 1...12 {
+                if multiplicand >= multiplier {
+                    let result: Int = multiplier * multiplicand
+                    generatedQA.append(Question(questions: "\(multiplier) x \(multiplicand)", answer: result))
+                    if multiplier != multiplicand {
+                        generatedQA.append(Question(questions: "\(multiplicand) x \(multiplier)", answer: result))
+                    }
+                }
+            }
+        }
+        return generatedQA.shuffle()
+    }
+    
+    
 }
+
 
 
 struct ContentView_Previews: PreviewProvider {

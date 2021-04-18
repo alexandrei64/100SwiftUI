@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12A57BF4262758B30034EF07 /* MultiplyBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A57BF3262758B30034EF07 /* MultiplyBotApp.swift */; };
-		12A57BF6262758B30034EF07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A57BF5262758B30034EF07 /* ContentView.swift */; };
-		12A57BF8262758B70034EF07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A57BF7262758B70034EF07 /* Assets.xcassets */; };
-		12A57BFB262758B70034EF07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A57BFA262758B70034EF07 /* Preview Assets.xcassets */; };
+		12CD1EB12627A7910037602E /* MultiplyBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD1EB02627A7910037602E /* MultiplyBotApp.swift */; };
+		12CD1EB32627A7910037602E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CD1EB22627A7910037602E /* ContentView.swift */; };
+		12CD1EB52627A7940037602E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CD1EB42627A7940037602E /* Assets.xcassets */; };
+		12CD1EB82627A7940037602E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CD1EB72627A7940037602E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12A57BF0262758B30034EF07 /* MultiplyBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplyBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		12A57BF3262758B30034EF07 /* MultiplyBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyBotApp.swift; sourceTree = "<group>"; };
-		12A57BF5262758B30034EF07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		12A57BF7262758B70034EF07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		12A57BFA262758B70034EF07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		12A57BFC262758B70034EF07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CD1EAD2627A7910037602E /* MultiplyBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiplyBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CD1EB02627A7910037602E /* MultiplyBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyBotApp.swift; sourceTree = "<group>"; };
+		12CD1EB22627A7910037602E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12CD1EB42627A7940037602E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12CD1EB72627A7940037602E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12CD1EB92627A7940037602E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		12A57BED262758B30034EF07 /* Frameworks */ = {
+		12CD1EAA2627A7910037602E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,38 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12A57BE7262758B30034EF07 = {
+		12CD1EA42627A7910037602E = {
 			isa = PBXGroup;
 			children = (
-				12A57BF2262758B30034EF07 /* MultiplyBot */,
-				12A57BF1262758B30034EF07 /* Products */,
+				12CD1EAF2627A7910037602E /* MultiplyBot */,
+				12CD1EAE2627A7910037602E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		12A57BF1262758B30034EF07 /* Products */ = {
+		12CD1EAE2627A7910037602E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12A57BF0262758B30034EF07 /* MultiplyBot.app */,
+				12CD1EAD2627A7910037602E /* MultiplyBot.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		12A57BF2262758B30034EF07 /* MultiplyBot */ = {
+		12CD1EAF2627A7910037602E /* MultiplyBot */ = {
 			isa = PBXGroup;
 			children = (
-				12A57BF3262758B30034EF07 /* MultiplyBotApp.swift */,
-				12A57BF5262758B30034EF07 /* ContentView.swift */,
-				12A57BF7262758B70034EF07 /* Assets.xcassets */,
-				12A57BFC262758B70034EF07 /* Info.plist */,
-				12A57BF9262758B70034EF07 /* Preview Content */,
+				12CD1EB02627A7910037602E /* MultiplyBotApp.swift */,
+				12CD1EB22627A7910037602E /* ContentView.swift */,
+				12CD1EB42627A7940037602E /* Assets.xcassets */,
+				12CD1EB92627A7940037602E /* Info.plist */,
+				12CD1EB62627A7940037602E /* Preview Content */,
 			);
 			path = MultiplyBot;
 			sourceTree = "<group>";
 		};
-		12A57BF9262758B70034EF07 /* Preview Content */ = {
+		12CD1EB62627A7940037602E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				12A57BFA262758B70034EF07 /* Preview Assets.xcassets */,
+				12CD1EB72627A7940037602E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -72,38 +72,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12A57BEF262758B30034EF07 /* MultiplyBot */ = {
+		12CD1EAC2627A7910037602E /* MultiplyBot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12A57BFF262758B70034EF07 /* Build configuration list for PBXNativeTarget "MultiplyBot" */;
+			buildConfigurationList = 12CD1EBC2627A7940037602E /* Build configuration list for PBXNativeTarget "MultiplyBot" */;
 			buildPhases = (
-				12A57BEC262758B30034EF07 /* Sources */,
-				12A57BED262758B30034EF07 /* Frameworks */,
-				12A57BEE262758B30034EF07 /* Resources */,
+				12CD1EA92627A7910037602E /* Sources */,
+				12CD1EAA2627A7910037602E /* Frameworks */,
+				12CD1EAB2627A7910037602E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MultiplyBot;
-			productName = Multiply;
-			productReference = 12A57BF0262758B30034EF07 /* MultiplyBot.app */;
+			productName = MultiplyBot;
+			productReference = 12CD1EAD2627A7910037602E /* MultiplyBot.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		12A57BE8262758B30034EF07 /* Project object */ = {
+		12CD1EA52627A7910037602E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					12A57BEF262758B30034EF07 = {
+					12CD1EAC2627A7910037602E = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 12A57BEB262758B30034EF07 /* Build configuration list for PBXProject "MultiplyBot" */;
+			buildConfigurationList = 12CD1EA82627A7910037602E /* Build configuration list for PBXProject "MultiplyBot" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +111,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 12A57BE7262758B30034EF07;
-			productRefGroup = 12A57BF1262758B30034EF07 /* Products */;
+			mainGroup = 12CD1EA42627A7910037602E;
+			productRefGroup = 12CD1EAE2627A7910037602E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12A57BEF262758B30034EF07 /* MultiplyBot */,
+				12CD1EAC2627A7910037602E /* MultiplyBot */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		12A57BEE262758B30034EF07 /* Resources */ = {
+		12CD1EAB2627A7910037602E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A57BFB262758B70034EF07 /* Preview Assets.xcassets in Resources */,
-				12A57BF8262758B70034EF07 /* Assets.xcassets in Resources */,
+				12CD1EB82627A7940037602E /* Preview Assets.xcassets in Resources */,
+				12CD1EB52627A7940037602E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		12A57BEC262758B30034EF07 /* Sources */ = {
+		12CD1EA92627A7910037602E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A57BF6262758B30034EF07 /* ContentView.swift in Sources */,
-				12A57BF4262758B30034EF07 /* MultiplyBotApp.swift in Sources */,
+				12CD1EB32627A7910037602E /* ContentView.swift in Sources */,
+				12CD1EB12627A7910037602E /* MultiplyBotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		12A57BFD262758B70034EF07 /* Debug */ = {
+		12CD1EBA2627A7940037602E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		12A57BFE262758B70034EF07 /* Release */ = {
+		12CD1EBB2627A7940037602E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,44 +262,44 @@
 			};
 			name = Release;
 		};
-		12A57C00262758B70034EF07 /* Debug */ = {
+		12CD1EBD2627A7940037602E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Multiply/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MultiplyBot/Preview Content\"";
 				DEVELOPMENT_TEAM = GAL4XQQNS4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Multiply/Info.plist;
+				INFOPLIST_FILE = MultiplyBot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.alexandrei.Multiply;
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexandrei.MultiplyBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		12A57C01262758B70034EF07 /* Release */ = {
+		12CD1EBE2627A7940037602E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Multiply/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MultiplyBot/Preview Content\"";
 				DEVELOPMENT_TEAM = GAL4XQQNS4;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Multiply/Info.plist;
+				INFOPLIST_FILE = MultiplyBot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.alexandrei.Multiply;
+				PRODUCT_BUNDLE_IDENTIFIER = net.alexandrei.MultiplyBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,25 +309,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12A57BEB262758B30034EF07 /* Build configuration list for PBXProject "MultiplyBot" */ = {
+		12CD1EA82627A7910037602E /* Build configuration list for PBXProject "MultiplyBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12A57BFD262758B70034EF07 /* Debug */,
-				12A57BFE262758B70034EF07 /* Release */,
+				12CD1EBA2627A7940037602E /* Debug */,
+				12CD1EBB2627A7940037602E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12A57BFF262758B70034EF07 /* Build configuration list for PBXNativeTarget "MultiplyBot" */ = {
+		12CD1EBC2627A7940037602E /* Build configuration list for PBXNativeTarget "MultiplyBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12A57C00262758B70034EF07 /* Debug */,
-				12A57C01262758B70034EF07 /* Release */,
+				12CD1EBD2627A7940037602E /* Debug */,
+				12CD1EBE2627A7940037602E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 12A57BE8262758B30034EF07 /* Project object */;
+	rootObject = 12CD1EA52627A7910037602E /* Project object */;
 }

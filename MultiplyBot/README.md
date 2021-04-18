@@ -1,4 +1,4 @@
-# Challenge 1 - TempConvert
+# Challenge 3 - MultiplyBot
 
 ## 📝 Notes
 
