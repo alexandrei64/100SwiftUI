@@ -13,8 +13,10 @@ struct AddView: View {
     @State private var name = ""
     @State private var type = "Personal"
     @State private var amount = ""
-
+    
     static let types = ["Business", "Personal"]
+    
+    @State private var showingAlert = false
 
     var body: some View {
         NavigationView {
@@ -30,14 +32,27 @@ struct AddView: View {
             }
             .navigationBarTitle("Add new expense")
             .navigationBarItems(trailing: Button("Save") {
-                if let actualAmount = Int(self.amount) {
-                    let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
-                    self.expenses.items.append(item)
-                    self.presentationMode.wrappedValue.dismiss()
-                }
+                inputChecker()
             })
         }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Alert"), message: Text("Only numbers are accepted for amount"), dismissButton: .default(Text("Dismiss")))
+        }
         .preferredColorScheme(.dark)
+    }
+    
+    func inputChecker() {
+        let digits = CharacterSet.decimalDigits
+        
+        if CharacterSet(charactersIn: amount).isSubset(of: digits) == false {
+            showingAlert = true
+        } else {
+            if let actualAmount = Int(self.amount) {
+                let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
+                self.expenses.items.append(item)
+                self.presentationMode.wrappedValue.dismiss()
+            }
+        }
     }
 }
 

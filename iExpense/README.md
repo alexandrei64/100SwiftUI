@@ -11,8 +11,6 @@ UserDefaults, Codable, sheet(), onDelete(), @ObservedObject
 > * Add some validation to the Save button in AddView. If you enter “fish” or another thing that can’t be converted to an integer, show an alert telling users what the problem is.
 
 ## 📸 Screenshots
-<!---
 <div align ="center">
 <img src="/Assets/Mockup_iExpense.png" width=800>
 </div>
---->
