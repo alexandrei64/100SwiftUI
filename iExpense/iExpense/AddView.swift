@@ -42,9 +42,7 @@ struct AddView: View {
     }
     
     func inputChecker() {
-        let digits = CharacterSet.decimalDigits
-        
-        if CharacterSet(charactersIn: amount).isSubset(of: digits) == false {
+        if CharacterSet(charactersIn: amount).isSubset(of: .decimalDigits) == false {
             showingAlert = true
         } else {
             if let actualAmount = Int(self.amount) {
