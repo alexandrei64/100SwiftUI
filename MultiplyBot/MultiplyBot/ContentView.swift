@@ -15,12 +15,11 @@ struct ContentView: View {
 }
 
 struct Question {
-    let questions: String
-    let answer: Int
+    var problem: String
+    var answer: String
 }
 
 struct SettingScreen: View {
-    
     let questionAlternatives: [String] = ["5", "10", "20", "All"]
     
     @State private var numberOfTables = 1
@@ -64,7 +63,7 @@ struct SettingScreen: View {
                     .frame(width: 320, height: 50, alignment: .leading)
                     
                     Spacer()
-                    
+      
                     NavigationLink(
                         destination: GameScreen(tablesReturned: numberOfTables, questionsReturned: questionSelection),
                         label: {
@@ -98,12 +97,8 @@ struct GameScreen: View {
     @State private var round: Int = 0
     @State private var currentQuestion: Int = 0
     
-    @State private var qnaDictionary: [String : Int] = [:]
-    
     var body: some View {
-        
         ZStack {
-            
             VStack(spacing: 0) {
                 Color(red: 208/255, green: 239/255, blue: 251/255)
                     .edgesIgnoringSafeArea(.top)
@@ -130,7 +125,7 @@ struct GameScreen: View {
                 Text("what's")
                     .font(.system(size: 30))
                 
-                Text("yeyt")
+                Text("")
                     .font(.system(size: 50))
                     .fontWeight(.bold)
                 
@@ -167,28 +162,22 @@ struct GameScreen: View {
                 Spacer()
             }
         }
-        .onAppear(perform: { createQuestions() })
+        .onAppear(perform: { createQuestions(for: tablesReturned) })
         .preferredColorScheme(.light)
     }
 
-    func createQuestions() {
-        var generatedQA = [Question]()
+    func createQuestions(for a: Int) -> [Question] {
+        var problem: String
+        var result: String
+        var questions = [Question]()
         
-        for multiplier in 1 ... tablesReturned {
-            for multiplicand in 1...12 {
-                if multiplicand >= multiplier {
-                    let result: Int = multiplier * multiplicand
-                    generatedQA.append(Question(questions: "\(multiplier) x \(multiplicand)", answer: result))
-                    if multiplier != multiplicand {
-                        generatedQA.append(Question(questions: "\(multiplicand) x \(multiplier)", answer: result))
-                    }
-                }
-            }
+        for i in 1...12 {
+            problem = "\(a) x \(i)"
+            result = "\(a * i)"
+            questions.append(Question(problem: problem, answer: result))
         }
-        return generatedQA.shuffle()
+        return questions
     }
-    
-    
 }
 
 
