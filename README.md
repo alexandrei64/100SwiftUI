@@ -19,6 +19,7 @@ These projects helped and guided me through Swift and SwiftUI, but also offered 
 * [Project 5 - WordScramble](https://github.com/alexandrei64/100SwiftUI/blob/main/WordScramble)
 * [Project 6 - Animations](https://github.com/alexandrei64/100SwiftUI/blob/main/Animations)
 * [Project 7 - iExpense](https://github.com/alexandrei64/100SwiftUI/blob/main/iExpense)
+* [Project 8 - Moonshot](https://github.com/alexandrei64/100SwiftUI/blob/main/Moonshot)
 
 ## 🏆 Challenges
 
