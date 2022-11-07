@@ -22,7 +22,7 @@ struct Question {
 struct SettingScreen: View {
     let questionAlternatives: [String] = ["5", "10", "20", "All"]
     
-    @State private var numberOfTables = 1
+    @State private var numberOfTables = 2
     @State private var questionSelection = 1
     
     var body: some View {
@@ -41,7 +41,7 @@ struct SettingScreen: View {
                     Spacer()
                     
                     Group {
-                        Stepper(value: $numberOfTables, in: 1...12) {
+                        Stepper(value: $numberOfTables, in: 2...12) {
                             Text("Tables up to: \(numberOfTables)")
                                 .font(.title3)
                                 .fontWeight(.bold)
@@ -124,6 +124,7 @@ struct GameScreen: View {
                 
                 Text("what's")
                     .font(.system(size: 30))
+                    .bold()
                 
                 Text("")
                     .font(.system(size: 50))
@@ -162,7 +163,7 @@ struct GameScreen: View {
                 Spacer()
             }
         }
-        .onAppear(perform: { createQuestions(for: tablesReturned) })
+       // .onAppear(perform: { createQuestions(for: tablesReturned) })
         .preferredColorScheme(.light)
     }
 
